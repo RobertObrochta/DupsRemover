@@ -1,5 +1,6 @@
 
 import os
+import shutil
 from time import sleep
 from rich.console import Console
 import random
@@ -83,7 +84,7 @@ def removing(list_duplicates):
     if remove.lower() in ["yes", "y"]:
         for itemPath in list_duplicates:
             if os.path.isdir(itemPath):
-                os.rmdir(itemPath)
+                shutil.rmtree(itemPath)
             elif os.path.isfile(itemPath):
                 os.remove(itemPath)
         return True
