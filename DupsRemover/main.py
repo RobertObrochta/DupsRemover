@@ -7,6 +7,7 @@ import random
 
 console = Console()
 
+
 def startUp():
     console.print("[#758FEA]Welcome to DupsRemover!\n")
     while True:
